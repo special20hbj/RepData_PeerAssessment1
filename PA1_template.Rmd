@@ -35,7 +35,7 @@ max_steps <- StepsInterval[which.max(StepsInterval$steps), ]
 with(StepsInterval,{
         plot(interval, steps, type = "l", main = "Average Daily Activity Pattern", xlab = "5-minute interval", ylab = "Average number of steps taken")
         points(max_steps$interval, max_steps$steps, col = "red", lwd = 2, pch = 19)
-        legend("topright", legend = "the maximum number of steps", text.col = "red", bty = "n")
+        legend("topright", legend = "the maximum number of steps", text.col = "red", cex = 0.5, bty = "n")
 })
 ```
 
